@@ -13,41 +13,20 @@ body {
     padding: 20px;
 }
 
-/* Header */
-header {
+.navigation {
+    display: flex;
+    justify-content: space-between;
     background-color: #333;
     padding: 10px 0;
 }
 
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-header nav img {
-    width: 50px;
-    height: auto;
-}
-
-header nav a {
+.navigation-link {
     color: white;
     text-decoration: none;
     padding: 10px;
-    margin: 0 10px;
-    transition: background-color 0.3s ease;
 }
 
-header nav a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-}
-
-/* Main Section */
-main {
+.content-section {
     max-width: 1200px;
     margin: 30px auto;
     text-align: center;
@@ -57,27 +36,13 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+.main-heading {
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 20px;
 }
 
-main img {
-    border-radius: 50%;
-    margin: 20px 0;
-}
-
-p {
-    font-size: 1.1rem;
-    color: #666;
-    line-height: 1.8;
-    max-width: 800px;
-    margin: 20px auto;
-}
-
-/* Aside Section */
-aside {
+.sidebar-section {
     max-width: 600px;
     margin: 30px auto;
     background-color: white;
@@ -86,35 +51,22 @@ aside {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-aside h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-aside img {
-    width: 100%; /* This ensures the image is responsive */
+.sidebar-image {
+    width: 100%;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 20px;
 }
 
-aside p {
+.text-content {
     font-size: 1.1rem;
     color: #666;
     line-height: 1.8;
+    padding: 0;
 }
 
-/* Footer */
-footer {
+.site-footer {
     text-align: center;
     padding: 20px;
     background-color: #333;
     color: white;
-    margin-top: 40px;
-}
-
-footer p {
-    font-size: 1rem;
-    font-weight: bold;
 }
