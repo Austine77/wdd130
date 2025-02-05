@@ -1,134 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home - Sunday Prince Augustine | WDD 130</title>
-        <meta name="description" content="Explore custom web development, responsive design, and SEO optimization services by Sunday Prince Augustine, a WDD 130 student.">
-        <meta name="author" content="Sunday Prince Augustine">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Banger&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-    </head>    
-        body {
-            font-family: 'Poppins', sans-serif; /* Updated to Poppins */
-            margin: 0;
-            padding: 0;
-            background-image: url('service.webp');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            color: #0054b3;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #fff;
-        }
-        .logo img {
-            max-height: 50px;
-        }
-        nav ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav li {
-            margin: 0 15px;
-        }
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #00ccff;
-        }
-        nav a.active {
-            font-weight: 700;
-            color: #ffcc00;
-        }
-        main {
-            text-align: center;
-            margin: 50px 20px;
-        }
-        main h1 {
-            font-family: 'Banger', cursive; /* Updated to Banger */
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        main p {
-            font-size: 2.2em;
-            color: hwb(49 7% 5%);
-        }
-        section {
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            margin: 20px auto;
-            border-radius: 10px;
-            max-width: 800px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        section h2 {
-            margin-bottom: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 20px;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #fff;
-        }
-        footer p {
-            margin: 0;
-        }
-    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sunday Prince Augustine | WDD 130</title>
+    <meta name="description" content="Explore custom web development, responsive design, and SEO optimization services by Sunday Prince Augustine, a WDD 130 student.">
+    <meta name="author" content="Sunday Prince Augustine">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Banger&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="Website Logo">
-        </div>
         <nav>
-            <ul>
-                <li><a href="https://austine77.github.io/wdd130/" class="active">Home</a></li>
-                <li><a href="https://austine77.github.io/wdd130/wwr/about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <h1>SUNDAY PRINCE AUGUSTINE | WDD 130</h1>
-        <p>Welcome To Nigeria Rafting Site.</p>
-        <section>
-            <img src="profile.jpg" alt="Profile Picture" style="width: 20%; border-radius: 10px;">
-            <p>Hello, I'm Sunday Prince Augustine, hailing from Akwa Ibom State in the South-South Niger Delta region of Nigeria. I am a Software Engineering student at Brigham Young University - Idaho, specializing in Web and Application Development. As a versatile scriptwriter, I craft precise and innovative scripts across multiple programming languages, including Python, JavaScript, and frameworks like React and Tailwind.</p>
-            <p>Beyond my academic and professional pursuits, I’m passionate about games. I enjoy engaging in immersive gaming experiences, with some of my favorites including Rafting, Minecraft, Fortnite, Call of Duty, and Among Us. Gaming not only fuels my creativity but also inspires my problem-solving skills, which I apply to my software projects.</p>
-            <p>I am a motivated individual driven by the belief that “Education is the key to success” and that “Success depends on effort.” My goal is to contribute meaningfully to the tech industry, leveraging my skills to create impactful and scalable solutions.</p>
-            <ul>
-                <li>Custom Web Development</li>
-                <li>Responsive Design</li>
-                <li>SEO Optimization</li>
-            </ul>
-            <figure>
-                <img src="rafting01.webp" alt="Rafting Image 1" style="width: 100%; border-radius: 10px;">
-                <img src="rafting02.jpg" alt="Rafting Image 2" style="width: 100%; border-radius: 10px;">
-                <img src="rafting03.jpg" alt="Rafting Image 3" style="width: 100%; border-radius: 10px;">
-                <img src="rafting05.jpg" alt="Rafting Image 4" style="width: 100%; border-radius: 10px;">
-                <img src="rafting.jpg" alt="Rafting Image 5" style="width: 100%; border-radius: 10px;">
-                <figcaption>Discover our amazing services</figcaption>
-            </figure>
-        </section>
+        <h1>Welcome to Sunday Prince Augustine's Portfolio</h1>
+        <p>Your go-to solution for custom web development, SEO optimization, and user-friendly designs.</p>
+        <button class="cta-button">Learn More</button>
     </main>
+
     <footer>
-        <p>&copy; 2025 Sunday Prince Augustine | All rights reserved.</p>
+        <p>&copy; 2025 Sunday Prince Augustine. All rights reserved.</p>
     </footer>
 </body>
 </html>
