@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif; /* Using Roboto font from Google Fonts */
+    font-family: 'Poppins', sans-serif; /* Updated to Poppins */
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
@@ -66,7 +66,7 @@ header nav ul li a:focus {
 }
 
 .hero h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Banger', cursive; /* Updated to Banger */
     font-size: 36px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -83,7 +83,7 @@ header nav ul li a:focus {
 
 .about-section h1,
 .about-section h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Banger', cursive;
     color: #333;
     margin-bottom: 10px;
 }
