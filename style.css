@@ -19,7 +19,7 @@ header {
     padding: 10px 0;
 }
 
-nav {
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,12 +28,12 @@ nav {
     padding: 0 20px;
 }
 
-nav img {
+header nav img {
     width: 50px;
     height: auto;
 }
 
-nav a {
+header nav a {
     color: white;
     text-decoration: none;
     padding: 10px;
@@ -41,7 +41,7 @@ nav a {
     transition: background-color 0.3s ease;
 }
 
-nav a:hover {
+header nav a:hover {
     background-color: #575757;
     border-radius: 5px;
 }
