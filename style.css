@@ -93,6 +93,8 @@ aside h2 {
 }
 
 aside img {
+    width: 100%; /* This ensures the image is responsive */
+    height: auto;
     border-radius: 8px;
     margin-bottom: 20px;
 }
