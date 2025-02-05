@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Banger&family=Poppins:wght@400;600&display=swap');
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@700&display=swap');
 
 * {
     margin: 0;
@@ -7,7 +8,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Using Poppins for body text */
     background-image: url('service.webp');
     background-size: cover;
     background-repeat: no-repeat;
@@ -59,16 +60,13 @@ nav a.active {
     color: #ffcc00;
 }
 
-/* Main Section */
 main {
     text-align: center;
     margin: 100px 20px;
-    max-width: 1200px; /* max-width for main */
-    margin: auto; /* Center the content */
 }
 
 main h1 {
-    font-family: 'Banger', cursive;
+    font-family: 'Bangers', cursive; /* Using Bangers for main headings */
     font-size: 3em;
     margin-bottom: 10px;
     color: #333;
@@ -79,7 +77,6 @@ main p {
     color: hwb(49 7% 5%);
 }
 
-/* Section */
 section {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 30px;
@@ -102,11 +99,6 @@ section h2 {
 figure img {
     width: 100%;
     border-radius: 10px;
-}
-
-/* Paragraph */
-p {
-    padding: 0; /* Ensure no padding in paragraphs */
 }
 
 button {
@@ -143,14 +135,4 @@ footer a {
 
 footer a:hover {
     color: #ffcc00;
-}
-
-/* Aside Rule */
-aside {
-    display: none; /* If you are not using aside, hide or remove it */
-}
-
-/* Aside Image Rule */
-aside img {
-    display: none; /* If you are not using aside, remove this */
 }
