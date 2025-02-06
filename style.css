@@ -13,6 +13,14 @@ body {
     padding: 20px;
 }
 
+/* Main Content Section */
+main {
+    padding: 20px;
+    max-width: 1200px; /* You can adjust this value */
+    margin: 0 auto; /* Centers the content */
+}
+
+/* Navigation Bar */
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -26,6 +34,7 @@ body {
     padding: 10px;
 }
 
+/* Content Section */
 .content-section {
     max-width: 1200px;
     margin: 30px auto;
@@ -42,6 +51,7 @@ body {
     margin-bottom: 20px;
 }
 
+/* Sidebar Section */
 .sidebar-section {
     max-width: 600px;
     margin: 30px auto;
@@ -57,6 +67,7 @@ body {
     border-radius: 8px;
 }
 
+/* Text Content */
 .text-content {
     font-size: 1.1rem;
     color: #666;
@@ -64,6 +75,7 @@ body {
     padding: 0;
 }
 
+/* Footer */
 .site-footer {
     text-align: center;
     padding: 20px;
