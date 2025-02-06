@@ -4,13 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Nigeria Whitewater Rafting Adventure, your go-to experts for thrilling whitewater rafting adventures. Discover our mission, values, and commitment to unforgettable outdoor experiences.">
+    <meta name="description" content="Contact Nigeria Whitewater Rafting Adventure for inquiries, reservations, and suggestions. Get in touch with our team and start your next adventure today!">
     <meta name="author" content="Sunday Prince Augustine">
-    <title>About Us | Nigeria Whitewater Rafting Adventure</title>
+    <title>Contact Us | Nigeria Whitewater Rafting Adventure</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        header.hero-header, footer {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,48 +47,59 @@
     </header>
 
     <main>
-        <div class="hero">
-            <h1>About Nigeria Whitewater Rafting Adventure</h1>
-            <article class="center">
-                <img src="client.png" alt="Happy Client enjoying the rafting adventure" class="client-image">
-                <p>We craft unforgettable whitewater rafting adventures filled with excitement, thrill, and memories that will last a lifetime. Join us and embark on the journey of a lifetime!</p>
-            </article>
-        </div>
+        <h1>Contact Nigeria Whitewater Rafting Adventure</h1>
 
-        <section>
-            <h2>History</h2>
-            <p>Experience the ultimate whitewater rafting adventure with White Water Rafting, founded by Austine77 in 2025 and proudly based in Akwa Ibom, Nigeria. Whether you’re seeking family-friendly fun or the adrenaline rush of tackling high-octane rapids, we deliver unforgettable experiences tailored for every thrill-seeker. Join us and create memories that last a lifetime! Your next great adventure starts here. 🌊</p>
+        <section class="contact-info">
+            <h2>Our Contact Information</h2>
+            <p>Address: 123 Adventure Lane, Akwa Ibom, Nigeria</p>
+            <p>Phone: +234-123-456-7890</p>
+            <p>Email: info@whitewateradventure.ng</p>
+
+            <h2>Find Us Here:</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.837736637525!2d-122.08424968468027!3d37.42199977982265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba1afcf35f23%3A0xa9f2b4d0fb69b6f!2sGoogleplex!5e0!3m2!1sen!2sus!4v1611714245678!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
 
-        <section class="gallery-section">
-            <h2>Adventure Awaits You!</h2>
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
             <div class="gallery">
                 <figure>
-                    <img src="rafting1.jpg" alt="Rafting Adventure 1">
-                    <figcaption>Los Dientes del Diablo</figcaption>
+                    <img src="employee1.jpg" alt="John Doe">
+                    <figcaption>John Doe - Adventure Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="rafting2.jpg" alt="Rafting Adventure 2">
-                    <figcaption>Big Mallard</figcaption>
+                    <img src="employee2.jpg" alt="Jane Smith">
+                    <figcaption>Jane Smith - Customer Support</figcaption>
                 </figure>
                 <figure>
-                    <img src="rafting3.jpg" alt="Rafting Adventure 3">
-                    <figcaption>Half Day Adventure</figcaption>
-                </figure>
-                <figure>
-                    <img src="rafting4.jpg" alt="Rafting Adventure 4">
-                    <figcaption>Full Day Adventure</figcaption>
-                </figure>
-                <figure>
-                    <img src="rafting5.jpg" alt="Rafting Adventure 5">
-                    <figcaption>Rapid Challenge</figcaption>
+                    <img src="employee3.jpg" alt="Mike Johnson">
+                    <figcaption>Mike Johnson - Safety Specialist</figcaption>
                 </figure>
             </div>
         </section>
 
-        <section>
-            <h2>Why Choose Us?</h2>
-            <p>At Nigeria Whitewater Rafting Adventure, we are passionate about offering the best rafting experiences in Nigeria. Our team of experts is dedicated to ensuring your safety and providing a fun, thrilling adventure. With years of experience and a commitment to excellence, we guarantee that your rafting adventure will be unforgettable.</p>
+        <section class="contact-form">
+            <h2>Contact Us Form</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+
+                <button type="submit">Submit Message</button>
+            </form>
         </section>
     </main>
 
@@ -79,6 +110,7 @@
             <a href="https://x.com/"><img src="twitter.png" alt="Twitter"></a>
             <a href="https://www.instagram.com/"><img src="instagram.jpeg" alt="Instagram"></a>
         </div>
+        <p><a href="wireframe-contact-page.png">View Wireframe Design</a></p>
     </footer>
 </body>
 
