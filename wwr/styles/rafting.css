@@ -3,9 +3,8 @@
     --secondary-color: #10B3A8;
     --accent1-color: #DA8631;
     --accent2-color: #E66673;
-
-    --heading-font: Montserrat, serif;
-    --paragraph-font: Roboto, serif;
+    --heading-font: "Bangers", serif;
+    --paragraph-font: "Poppins", serif;
 }
 
 body {
@@ -18,7 +17,22 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
 }
 
-a{
+.bangers-regular {
+    font-family: "Bangers", serif;
+    font-weight: 400;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+}
+
+.poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+}
+
+a {
     text-decoration: none;
 }
 
@@ -28,19 +42,18 @@ header, main, footer {
 }
 
 .hero {
-    position:relative
+    position: relative;
 }
 
-.hero>img  {
-    width: 100%
-
+.hero>img {
+    width: 100%;
 }
 
 .hero h1 {
     position: absolute;
     top: 1em;
     left: 50%;
-    transform: translatex(-50%);
+    transform: translateX(-50%);
     background-color: #ffffff95;
     padding: 1rem;
     color: #150480;
@@ -49,7 +62,7 @@ header, main, footer {
 
 .hero article {
     background-color: #ffffff95;
-    position:absolute;
+    position: absolute;
     top: 15rem;
     bottom: 1rem;
     left: 2rem;
@@ -74,7 +87,7 @@ footer {
     color: #fff;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    padding: 2rem
+    padding: 2rem;
 }
 
 .social {
@@ -86,12 +99,11 @@ footer {
     width: 3em;
 }
 
-/* header items styling */
 header {
     display: grid;
     grid-template-columns: 200px auto;
     align-items: center;
-    background-color:#3e3e3e;
+    background-color: #3e3e3e;
 }
 
 nav {
@@ -108,15 +120,14 @@ nav a {
 
 nav a:hover {
     background-color: #fff;
-    color:#DA8631;
-
+    color: #DA8631;
 }
 
 .history {
     display: grid;
     grid-template-columns: 1fr 12em 1fr;
     gap: 1em;
-    margin: 50px 0; 
+    margin: 50px 0;
 }
 
 img {
@@ -129,7 +140,6 @@ img {
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
     justify-items: center;
-    /* position: relative; */
 }
 
 .history h2,
@@ -161,7 +171,7 @@ figure:nth-of-type(odd) {
 figure:nth-of-type(even) {
     background-color: var(--accent2-color);
     color: var(--nav-link-color);
-    align-self:center; 
+    align-self: center;
 }
 
 figcaption {
@@ -186,18 +196,14 @@ footer {
     margin-top: 100px;
 }
 
-/* Footer styling */
-
 footer p {
     color: #fff;
-
 }
 
 .footer-menu {
     color: #fff;
 }
 
-/* Social media link styling */
 .sociallinks {
     display: flex;
     gap: 1rem;
@@ -208,8 +214,5 @@ footer p {
 }
 
 .sociallinks a:hover {
-    /* This removes the background color from the nav a:hover rule for the social links
-    in the footer. */
-    background-color: unset
+    background-color: unset;
 }
-
