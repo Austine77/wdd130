@@ -1,99 +1,215 @@
-/* Global styles */
+:root {
+    --primary-color: #DFB005;
+    --secondary-color: #10B3A8;
+    --accent1-color: #DA8631;
+    --accent2-color: #E66673;
+
+    --heading-font: Montserrat, serif;
+    --paragraph-font: Roboto, serif;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--paragraph-font);
     margin: 0;
     padding: 0;
 }
 
-h1, h2 {
-    font-family: 'Bangers', cursive;
-    color: #333;
-    text-align: center;
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
 }
 
-/* Hero Header */
-.hero-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-}
-
-.hero-header .logo {
-    width: 150px;
-}
-
-.hero-header nav {
-    display: flex;
-    gap: 20px;
-}
-
-.hero-header nav a {
-    color: white;
+a{
     text-decoration: none;
-    font-size: 18px;
 }
 
-.hero-header nav a:hover {
-    text-decoration: underline;
+header, main, footer {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .hero {
-    background-color: #eef5f9;
-    padding: 40px 10px;
-    text-align: center;
+    position:relative
 }
 
-.hero img.client-image {
-    max-width: 300px;
-    border-radius: 10px;
+.hero>img  {
+    width: 100%
+
 }
 
-.gallery-section {
-    background-color: #f5f5f5;
-    padding: 40px 20px;
+.hero h1 {
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: #ffffff95;
+    padding: 1rem;
+    color: #150480;
+    font-size: 2em;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-    padding: 10px;
+.hero article {
+    background-color: #ffffff95;
+    position:absolute;
+    top: 15rem;
+    bottom: 1rem;
+    left: 2rem;
+    right: 2rem;
 }
 
-.gallery figure {
-    text-align: center;
+.hero article img {
+    float: right;
+    margin: 2rem;
+    width: 5rem;
 }
 
-.gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.hero article p {
+    color: #150480;
+    font-size: 1.25rem;
+    padding: 1rem;
+    font-weight: 500;
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: #3e3e3e;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 2rem
 }
 
-footer .social-media {
+.social {
+    grid-column: 3;
+    justify-self: end;
+}
+
+.social img {
+    width: 3em;
+}
+
+/* header items styling */
+header {
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    background-color:#3e3e3e;
+}
+
+nav {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
+    justify-content: space-around;
 }
 
-footer .social-media img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+nav a {
+    display: flex;
+    padding: 1em;
+    font-family: var(--heading-font);
+    color: #fff;
 }
 
-footer p {
+nav a:hover {
+    background-color: #fff;
+    color:#DA8631;
+
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 12em 1fr;
+    gap: 1em;
+    margin: 50px 0; 
+}
+
+img {
+    width: 100%;
+}
+
+.adventures {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    /* position: relative; */
+}
+
+.history h2,
+.adventures h2 {
+    grid-column: 1/-1;
+    justify-self: center;
+    padding: 1em 0;
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    unicode-bidi: isolate;
+}
+
+figure {
     margin: 0;
 }
+
+figure:nth-of-type(odd) {
+    background-color: var(--accent1-color);
+    color: var(--nav-link-color);
+    align-self: center;
+}
+
+figure:nth-of-type(even) {
+    background-color: var(--accent2-color);
+    color: var(--nav-link-color);
+    align-self:center; 
+}
+
+figcaption {
+    text-align: center;
+    padding: 1em 0;
+}
+
+.history img {
+    width: 100%;
+}
+
+.history p {
+    padding: 0 1em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #3e3e3e;
+    margin-top: 100px;
+}
+
+/* Footer styling */
+
+footer p {
+    color: #fff;
+
+}
+
+.footer-menu {
+    color: #fff;
+}
+
+/* Social media link styling */
+.sociallinks {
+    display: flex;
+    gap: 1rem;
+}
+
+.sociallinks img {
+    width: 2rem;
+}
+
+.sociallinks a:hover {
+    /* This removes the background color from the nav a:hover rule for the social links
+    in the footer. */
+    background-color: unset
+}
+
