@@ -12,6 +12,75 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
+    <style>
+        /* CSS to manage image size and responsiveness */
+        img {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        /* Ensure gallery images fit well */
+        .gallery {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .gallery figure {
+            width: 200px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .gallery img {
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        /* Responsive design for different screen sizes */
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            .gallery figure {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Contact form styling */
+        .contact-form form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+        }
+
+        .contact-form input, .contact-form textarea, .contact-form button {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 
 <body>
