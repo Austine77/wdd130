@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #DFB005;
-    --secondary-color: #10B3A8;
+    --primary-color: #099a1e;
+    --secondary-color: hwb(252 7% 8%);
     --accent1-color: #DA8631;
     --accent2-color: #E66673;
     --heading-font: "Bangers", serif;
@@ -54,7 +54,7 @@ header, main, footer {
     top: 1em;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #ffffff95;
+    background-color: #e6edf595;
     padding: 1rem;
     color: #150480;
     font-size: 2em;
@@ -83,7 +83,7 @@ header, main, footer {
 }
 
 footer {
-    background-color: #3e3e3e;
+    background-color: #4c08d2;
     color: #fff;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
@@ -101,9 +101,9 @@ footer {
 
 header {
     display: grid;
-    grid-template-columns: 200px auto;
+    grid-template-columns: 100px auto;
     align-items: center;
-    background-color: #3e3e3e;
+    background-color: #1912e8e1;
 }
 
 nav {
@@ -192,7 +192,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    background-color: #3e3e3e;
+    background-color: #4b07d2;
     margin-top: 100px;
 }
 
