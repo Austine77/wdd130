@@ -1,70 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Nigeria Whitewater Rafting Adventure for inquiries, reservations, and suggestions. Get in touch with our team and start your next adventure today!">
+    <title>About Us | Nigeria White Water Rafting</title>
+    <meta name="description" content="Learn about Nigeria Whitewater Rafting Adventure, your go-to experts for thrilling whitewater rafting adventures. Discover our mission, values, and commitment to unforgettable outdoor experiences.">
     <meta name="author" content="Sunday Prince Augustine">
-    <title>Contact Us | Nigeria Whitewater Rafting Adventure</title>
     
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles/rafting.css">
-
-    <style>
-        header {
-            background-color: rgba(128, 0, 128);
-            color: white;
-            padding: 20px 0;
-        }
-
-        footer {
-            background-color: purple;
-            color: white;
-            padding: 20px 0;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            justify-items: center;
-        }
-
-        .gallery figure {
-            text-align: center;
-        }
-
-        .gallery img {
-            width: 200px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        @media (max-width: 768px) {
-            .gallery {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .gallery {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .contact-info, .contact-form {
-            text-align: center;
-        }
-
-        iframe {
-            width: 100%;
-            height: 300px;
-        }
-    </style>
 </head>
 
 <body>
@@ -77,77 +26,49 @@
             <a href="https://austine77.github.io/wdd130/wwr/contact.html">Contact Us</a>
         </nav>
     </header>
-
+    
     <main>
         <div class="hero">
-            <img src="background.jpg" alt="Whitewater rafting adventure">
-            <h1 class="bangers-regular">Contact Nigeria Whitewater Rafting Adventure</h1>
+            <img src="my_hero_image.jpg" alt="Whitewater rafting adventure">
+            <h1 class="bangers-regular">About Nigeria White Water Rafting</h1>
             <article>
-                <h2>Contact Us</h2> <!-- Added heading here -->
                 <img src="elves-chasm.jpg" alt="Elves Chasm, rafting adventure">
-                <p class="poppins-regular">Contact us and embark on the journey of a lifetime.</p>
-                <section class="contact-info">
-                    <h2>Our Contact Information</h2>
-                    <p>Address: 123 Adventure Lane, Ikot Ekpene, Akwa Ibom, Nigeria</p>
-                    <p>Phone: +234-805-945-4897</p>
-                    <p>WhatsApp: +234-912-919-3069</p>
-                    <p>Email: investorsundaprince@gmail.com</p>            
-                </section>
+                <p class="poppins-regular">We craft unforgettable whitewater rafting adventures filled with excitement, thrill, and memories that will last a lifetime. 
+                    Join us and embark on the journey of a lifetime.
+                </p>
             </article>
         </div>
-
-        <section class="contact-info">
-            <h2>Our Contact Information</h2>
-            <p>Address: 123 Adventure Lane, Ikot Ekpene, Akwa Ibom, Nigeria</p>
-            <p>Phone: +234-805-945-4897</p>
-            <p>WhatsApp: +234-912-919-3069</p>
-            <p>Email: investorsundaprince@gmail.com</p>
-
-            <h2>Find Us Here:</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d127174.69225610603!2d7.790279171469538!3d5.069824286955566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sIkot%20Ekpene%20-%20Uyo%20Road%2C%20Ikot%20Ekpene%2C%20Akwa%20Ibom!5e0!3m2!1sen!2sng!4v1738945273216!5m2!1sen!2sng" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <section class="history">
+            <h2 class="poppins-bold">History</h2>
+            <p class="poppins-regular p1">Founded in 2025 by Sunday Prince Augustine and based in Akwa Ibom, Nigeria, Nigeria Whitewater Rafting Adventure is your gateway to thrilling rafting experiences. From beginner-friendly rides to intense rapids, we offer adventures for all skill levels.</p>
+            <img src="happy_client.png" alt="Happy rafting clients">
+            <p class="poppins-regular p2">Our mission is to provide safe, thrilling, and unforgettable whitewater rafting experiences while preserving the beauty of our rivers and fostering a love for outdoor adventure.</p>
         </section>
+        
+        <section class="adventures">
+            <h2 class="bangers-regular">Adventures Awaits You!</h2>
 
-        <section class="employee-profiles">
-            <h2>Meet Our Team</h2>
-            <div class="gallery">
-                <figure>
-                    <img src="employee1.jpg" alt="Sunday Prince">
-                    <figcaption>Sunday Prince - Adventure Guide</figcaption>
-                </figure>
-                <figure>
-                    <img src="employee2.jpg" alt="Victoria GoodNews">
-                    <figcaption>Victoria GoodNews - Customer Support</figcaption>
-                </figure>
-                <figure>
-                    <img src="employee3.jpg" alt="Sister Edith">
-                    <figcaption>Sister Edith - Safety Specialist</figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <section class="contact-form">
-            <h2>Contact Us Form</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <fieldset>
-                    <legend>Purpose of Message:</legend>
-                    <label><input type="radio" id="general-inquiry" name="purpose" value="general" required> General Inquiry</label>
-                    <label><input type="radio" id="reservation-question" name="purpose" value="reservation"> Reservation Question</label>
-                    <label><input type="radio" id="website-suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
-                </fieldset>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <label><input type="checkbox" id="subscribe" name="subscribe"> Subscribe to our monthly newsletter</label>
-
-                <button type="submit">Submit Message</button>
-            </form>
+            <figure>
+                <img src="rafting1.jpg" alt="Live Boldly">
+                <figcaption>Live Boldly</figcaption>
+            </figure>
+            <figure>
+                <img src="rafting2.jpg" alt="Conquer The Current">
+                <figcaption>Conquer The Current</figcaption>
+            </figure>
+            <figure>
+                <img src="rafting3.jpg" alt="Dive Into Adventure">
+                <figcaption>Dive Into Adventure</figcaption>
+            </figure>
+            <figure>
+                <img src="rafting4.jpg" alt="White Water Escape">
+                <figcaption>White Water Escape</figcaption>
+            </figure>
+            <figure>
+                <img src="rafting5.jpg" alt="Paddle Hard">
+                <figcaption>Paddle Hard</figcaption>
+            </figure>
         </section>
     </main>
 
