@@ -1,6 +1,6 @@
 :root {
     --primary-color: #099a1e;
-    --secondary-color: hwb(252 7% 8%);
+    --secondary-color: #251a58; /* Replaced HWB with an approximate HEX */
     --accent1-color: #DA8631;
     --accent2-color: #E66673;
     --heading-font: "Bangers", serif;
@@ -17,21 +17,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
 }
 
-.bangers-regular {
-    font-family: "Bangers", serif;
-    font-weight: 400;
-}
-
-.poppins-regular {
-    font-family: "Poppins", serif;
-    font-weight: 400;
-}
-
-.poppins-bold {
-    font-family: "Poppins", serif;
-    font-weight: 700;
-}
-
 a {
     text-decoration: none;
 }
@@ -41,12 +26,14 @@ header, main, footer {
     margin: 0 auto;
 }
 
+/* Hero Section */
 .hero {
     position: relative;
 }
 
-.hero>img {
+.hero > img {
     width: 100%;
+    display: block;
 }
 
 .hero h1 {
@@ -54,19 +41,19 @@ header, main, footer {
     top: 1em;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #e6edf595;
+    background-color: rgba(230, 237, 245, 0.9);
     padding: 1rem;
     color: #150480;
     font-size: 2em;
 }
 
 .hero article {
-    background-color: #ffffff95;
+    background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
     top: 15rem;
-    bottom: 1rem;
     left: 2rem;
     right: 2rem;
+    padding: 1rem;
 }
 
 .hero article img {
@@ -78,32 +65,15 @@ header, main, footer {
 .hero article p {
     color: #150480;
     font-size: 1.25rem;
-    padding: 1rem;
     font-weight: 500;
 }
 
-footer {
-    background-color: #4c08d2;
-    color: #fff;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    padding: 2rem;
-}
-
-.social {
-    grid-column: 3;
-    justify-self: end;
-}
-
-.social img {
-    width: 3em;
-}
-
+/* Navigation */
 header {
     display: grid;
     grid-template-columns: 100px auto;
     align-items: center;
-    background-color: #1912e8e1;
+    background-color: rgba(25, 18, 232, 0.9);
 }
 
 nav {
@@ -112,7 +82,6 @@ nav {
 }
 
 nav a {
-    display: flex;
     padding: 1em;
     font-family: var(--heading-font);
     color: #fff;
@@ -120,9 +89,10 @@ nav a {
 
 nav a:hover {
     background-color: #fff;
-    color: #DA8631;
+    color: var(--accent1-color);
 }
 
+/* History Section */
 .history {
     display: grid;
     grid-template-columns: 1fr 12em 1fr;
@@ -130,10 +100,15 @@ nav a:hover {
     margin: 50px 0;
 }
 
-img {
+.history img {
     width: 100%;
 }
- 
+
+.history p {
+    padding: 0 1em;
+}
+
+/* Adventure Section */
 .adventures {
     margin: 50px 0;
     display: grid;
@@ -150,54 +125,30 @@ img {
 }
 
 figure {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
-    unicode-bidi: isolate;
-}
-
-figure {
     margin: 0;
+    text-align: center;
+    padding: 1em;
 }
 
 figure:nth-of-type(odd) {
     background-color: var(--accent1-color);
-    color: var(--nav-link-color);
-    align-self: center;
+    color: #fff;
 }
 
 figure:nth-of-type(even) {
     background-color: var(--accent2-color);
-    color: var(--nav-link-color);
-    align-self: center;
+    color: #fff;
 }
 
-figcaption {
-    text-align: center;
-    padding: 1em 0;
-}
-
-.history img {
-    width: 100%;
-}
-
-.history p {
-    padding: 0 1em;
-}
-
+/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em;
     background-color: #4b07d2;
-    margin-top: 100px;
-}
-
-footer p {
     color: #fff;
+    margin-top: 100px;
 }
 
 .footer-menu {
@@ -211,8 +162,4 @@ footer p {
 
 .sociallinks img {
     width: 2rem;
-}
-
-.sociallinks a:hover {
-    background-color: unset;
 }
