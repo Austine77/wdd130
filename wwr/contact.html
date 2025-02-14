@@ -12,6 +12,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
+    <style>
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .gallery figure {
+            text-align: center;
+        }
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -43,9 +60,6 @@
             <p>Phone: +234-805-945-4897</p>
             <p>WhatsApp: +234-912-919-3069</p>
             <p>Email: investorsundaprince@gmail.com</p>
-
-            <h2>Find Us Here:</h2>
-            <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d127174.69225610603!2d7.790279171469538!3d5.069824286955566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sIkot%20Ekpene%20-%20Uyo%20Road%2C%20Ikot%20Ekpene%2C%20Akwa%20Ibom!5e0!3m2!1sen!2sng!4v1738945273216!5m2!1sen!2sng" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
         <section class="employee-profiles">
@@ -77,9 +91,9 @@
 
                 <fieldset>
                     <legend>Purpose of Message:</legend>
-                    <label><input type="radio" id="general-inquiry" name="purpose" value="general" required> General Inquiry</label>
-                    <label><input type="radio" id="reservation-question" name="purpose" value="reservation"> Reservation Question</label>
-                    <label><input type="radio" id="website-suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
                 </fieldset>
 
                 <label for="message">Message:</label>
@@ -96,12 +110,9 @@
         <p>&copy; 2025🌴 Sunday Prince Augustine 🌴 Akwa Ibom State🌴 Nigeria 🌴@ SP Web & Software Solution 🌴 All rights reserved.</p>
         <a href="https://app.moqups.com/hffxLFBxuMvcNDWxrg0w78WZpWasDBvd/view/page/ad64222d5?ui=0&fit_width=1" target="_blank">wireframe</a>
         <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="facebook.jfif" alt="Facebook"></a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="twitter.jfif" alt="Twitter"></a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="instagram.jfif" alt="Instagram"></a>
+            <a href="https://facebook.com" target="_blank"><img src="facebook.jfif" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="twitter.jfif" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="instagram.jfif" alt="Instagram"></a>
         </div>
     </footer>
 </body>
