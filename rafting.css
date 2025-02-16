@@ -1,0 +1,225 @@
+:root {
+    --primary-color: #099a1e;
+    --secondary-color: hwb(252 7% 8%);
+    --accent1-color: #DA8631;
+    --accent2-color: #E66673;
+    --heading-font: "Bangers", serif;
+    --paragraph-font: "Poppins", serif;
+}
+
+.google-map {
+    width: 100%;
+    height: 400px;
+    border: none; /* Optional: You can add this to remove the iframe border */
+}
+
+
+body {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+.bangers-regular {
+    font-family: "Bangers", serif;
+    font-weight: 400;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+}
+
+.poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+header, main, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero>img {
+    width: 100%;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e6edf595;
+    padding: 1rem;
+    color: #150480;
+    font-size: 2em;
+}
+
+.hero article {
+    background-color: #ffffff95;
+    position: absolute;
+    top: 15rem;
+    bottom: 1rem;
+    left: 2rem;
+    right: 2rem;
+}
+
+.hero article img {
+    float: right;
+    margin: 2rem;
+    width: 5rem;
+}
+
+.hero article p {
+    color: #150480;
+    font-size: 1.25rem;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #4c08d2;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 2rem;
+}
+
+.social {
+    grid-column: 3;
+    justify-self: end;
+}
+
+.social img {
+    width: 3em;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: center;
+    background-color: #1912e8e1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    display: flex;
+    padding: 1em;
+    font-family: var(--heading-font);
+    color: #fff;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #DA8631;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 12em 1fr;
+    gap: 1em;
+    margin: 50px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.adventures {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+
+.history h2,
+.adventures h2 {
+    grid-column: 1/-1;
+    justify-self: center;
+    padding: 1em 0;
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    unicode-bidi: isolate;
+}
+
+figure {
+    margin: 0;
+}
+
+figure:nth-of-type(odd) {
+    background-color: var(--accent1-color);
+    color: var(--nav-link-color);
+    align-self: center;
+}
+
+figure:nth-of-type(even) {
+    background-color: var(--accent2-color);
+    color: var(--nav-link-color);
+    align-self: center;
+}
+
+figcaption {
+    text-align: center;
+    padding: 1em 0;
+}
+
+.history img {
+    width: 100%;
+}
+
+.history p {
+    padding: 0 1em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #4b07d2;
+    margin-top: 100px;
+}
+
+footer p {
+    color: #fff;
+}
+
+.footer-menu {
+    color: #fff;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 1rem;
+}
+
+.sociallinks img {
+    width: 2rem;
+}
+
+.sociallinks a:hover {
+    background-color: unset;
+}
