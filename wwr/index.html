@@ -1,26 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sunday Prince Augustine | WDD 130 Home Page.">
-    <meta name="author" content="Sunday Prince Augustine">
     <title>Sunday Prince Augustine | WDD 130</title>
-    <link rel="stylesheet" href="styles/rafting.css">
+    <meta name="description" content="Learn about Nigeria Whitewater Rafting Adventure, your go-to experts for thrilling whitewater rafting adventures. Discover our mission, values, and commitment to unforgettable outdoor experiences.">
+    <meta name="author" content="Sunday Prince Augustine">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/rafting.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .image-box {
+            width: 250px;
+            text-align: center;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .image-box h3 {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        .image-box p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .spacer {
+            height: 60px;
+        }
+
+        /* Styled Text Box for "What We Offer" */
+        .offer-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 60px;
+        }
+
+        .offer-box {
+            display: flex;
+            align-items: center;
+            background: #f8f8f8;
+            border-radius: 12px;
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .offer-box img {
+            width: 40%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .offer-text {
+            width: 60%;
+            padding-left: 20px;
+        }
+
+        .offer-text h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .offer-text p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .offer-box {
+                flex-direction: column;
+                text-align: center;
+            }
+            .offer-box img {
+                width: 100%;
+            }
+            .offer-text {
+                width: 100%;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <img src="logo.png" alt="Site Logo">
+        <img src="sitelogo.png" alt="Logo">
         <nav>
-            <ul class="navigation">
-                <li><a href="https://austine77.github.io/wdd130/" class="active">Home</a></li>
-                <li><a href="http://austine77.github.io/wdd130/wwr/about.html">About Us</a></li>
-                <li><a href="http://austine77.github.io/wdd130/wwr/trips.html">Trips</a></li>
-                <li><a href="http://austine77.github.io/wdd130/wwr/contact.html">Contact Us</a></li>
-            </ul>
+            <a href="https://austine77.github.io/wdd130/">Home</a>
+            <a href="https://austine77.github.io/wdd130/wwr/about.html">About Us</a>
+            <a href="http://austine77.github.io/wdd130/wwr/trips.html">Trips</a>
+            <a href="https://austine77.github.io/wdd130/wwr/contact.html">Contact Us</a>
         </nav>
     </header>
     
@@ -29,50 +135,51 @@
         <h1>Experience the Thrill of Nigeria White Water Rafting</h1>
     </section>
     
-    <main class="grid-layout">
-        <section class="intro">
-            <h2>Welcome to Sunday Prince Tour</h2>
-            <p>We craft unforgettable whitewater rafting adventures filled with excitement, 
-			   Thrill, and memories that will last a lifetime. 
-               Join us and embark on the journey of a lifetime.</p>
-        </section>
+    <main>
+        <h2>Welcome to Sunday Prince Tour</h2>
+        <p>We craft unforgettable whitewater rafting adventures filled with excitement, 
+           thrill, and memories that will last a lifetime. 
+           Join us and embark on the journey of a lifetime.</p>
 
-        <section class="features">
-            <div class="feature">
+        <div class="container">
+            <div class="image-box">
                 <img src="rafting001.jfif" alt="Rafting in action">
                 <h3>Exciting Rapids</h3>
                 <p>Challenge yourself with thrilling rapids guided by our expert team.</p>
             </div>
-            <div class="feature">
+
+            <div class="image-box">
                 <img src="rafting002.jfif" alt="Team enjoying rafting">
                 <h3>Fun for Everyone</h3>
                 <p>From families to adventure seekers, we offer experiences for all skill levels.</p>
             </div>
-        </section>
 
-        <section class="company-purpose">
-            <img src="rafting003.jfif" alt="water">
-            <div>
-            <h3>Our Purpose</h3>
-            <p>At Nigeria Whitewater Rafting, our mission is to provide thrilling and unforgettable rafting adventures while prioritizing the highest standards of safety. 
-			We are dedicated to delivering exceptional experiences that combine adventure, teamwork, and a deep appreciation for nature, 
-			ensuring every journey down the river is both exhilarating and secure.</p>
+            <div class="image-box">
+                <img src="rafting003.jfif" alt="Rafting adventure">
+                <h3>Our Purpose</h3>
+                <p>At Nigeria Whitewater Rafting, our mission is to provide thrilling and unforgettable rafting adventures while prioritizing the highest standards of safety.</p>
             </div>
-        </section>
+        </div>
 
-        <section class="offerings">
-            <img src="rafting004.jfif" alt="rafters">
-            <div>
-                <h3>What We Offer</h3>
-                <p>We proviWe offer premium rafting equipment and personalized itineraries, ensuring a top-quality adventure tailored to your needs.de top-tier rafting gear with customizable itineraries</p>
+        <!-- Spacer before "What We Offer" -->
+        <div class="spacer"></div>
+
+        <!-- What We Offer - Styled Text Box -->
+        <div class="offer-section">
+            <div class="offer-box">
+                <img src="rafting004.jfif" alt="Rafting adventure">
+                <div class="offer-text">
+                    <h3>What We Offer</h3>
+                    <p>We offer premium rafting equipment and personalized itineraries, ensuring a top-quality adventure tailored to your needs.</p>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
     
     <section class="cta">
         <div class="explore">
-        <h2>Ready for an Unforgettable Adventure?</h2>
-        <a href="trips.html" class="cta-button">Explore Our Trips</a>
+            <h2>Ready for an Unforgettable Adventure?</h2>
+            <a href="trips.html" class="cta-button">Explore Our Trips</a>
         </div>
     </section>
 
@@ -86,23 +193,20 @@
     </section>
 
     <footer>
-        <div class="footer-content">
-            <p class="wireframe-link">
-                <a href="wireframe.jpg" target="_blank">View Wireframe</a>
-            </p>
-            <p class="copyright">© 2025🌴 Sunday Prince Augustine 🌴 Akwa Ibom State🌴 Nigeria 🌴@ SP Web & Software Solution 🌴 All2025, Deka-Ops All rights reserved</p>
-            <nav class="sociallinks">
-                <a href="https://web.facebook.com" target="_blank">
-                    <img src="facebook.jfif" alt="Facebook">
-                </a>
-                <a href="https://www.twitter.com" target="_blank">
-                    <img src="twitter.jfif" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="instagram.jfif" alt="Instagram">
-                </a>
-            </nav>
+        <p>&copy; 2025🌴 Sunday Prince Augustine 🌴 Akwa Ibom State🌴 Nigeria 🌴@ SP Web & Software Solution 🌴 All rights reserved.</p>
+        <a href="https://app.moqups.com/hffxLFBxuMvcNDWxrg0w78WZpWasDBvd/view/page/ad64222d5?ui=0&fit_width=1" target="_blank">Wireframe</a>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="facebook.jfif" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="twitter.jfif" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="instagram.jfif" alt="Instagram">
+            </a>
         </div>
     </footer>
 </body>
+
 </html>
