@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunday Prince Augustine | WDD 130</title>
-    <meta name="description" content="Learn about Nigeria Whitewater Rafting Adventure, your go-to experts for thrilling whitewater rafting adventures. Discover our mission, values, and commitment to unforgettable outdoor experiences.">
+    <meta name="description" content="Learn about Nigeria Whitewater Rafting Adventure, your go-to experts for thrilling whitewater rafting adventures.">
     <meta name="author" content="Sunday Prince Augustine">
     
     <!-- Google Fonts -->
@@ -16,42 +16,79 @@
     <link rel="stylesheet" href="styles/rafting.css">
 
     <style>
-        /* CSS Update for Column Layout */
-        .features, .company-purpose, .offerings {
+        /* Updated CSS for Image and Text Box */
+        .image-text-container {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            text-align: center;
-            gap: 1.5rem;
+            padding: 20px;
         }
 
-        .features .feature, 
-        .company-purpose, 
-        .offerings {
+        .image-text-box {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .features img, 
-        .company-purpose img, 
-        .offerings img {
-            width: 100%;
-            max-width: 400px; /* Adjust as needed */
+            background: #f4f4f4;
+            padding: 20px;
             border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            flex-wrap: wrap;
         }
 
-        .hero img {
+        .image-item {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .image-item img {
             width: 100%;
+            max-width: 250px;
             height: auto;
-            display: block;
+            border-radius: 8px;
         }
 
-        .social img {
-            width: 40px;
-            height: 40px;
-            margin: 5px;
+        .image-item p {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        /* New Style for Adventure Box */
+        .adventure-box {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 60px auto 0; /* Space below the three images */
+        }
+
+        .adventure-box img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .adventure-box p {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .image-text-box {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .adventure-box {
+                margin-top: 40px;
+            }
         }
     </style>
 </head>
@@ -71,43 +108,40 @@
         <h1>Experience the Thrill of Nigeria White Water Rafting</h1>
     </section>
     
-    <main class="grid-layout">
+    <main>
         <section class="intro">
             <h2>Welcome to Sunday Prince Tour</h2>
             <p>We craft unforgettable whitewater rafting adventures filled with excitement, 
-               Thrill, and memories that will last a lifetime. 
+               thrill, and memories that will last a lifetime. 
                Join us and embark on the journey of a lifetime.</p>
         </section>
 
-        <section class="features">
-            <div class="feature">
-                <img src="rafting001.jfif" alt="Rafting in action">
-                <h3>Exciting Rapids</h3>
-                <p>Challenge yourself with thrilling rapids guided by our expert team.</p>
-            </div>
-            <div class="feature">
-                <img src="rafting002.jfif" alt="Team enjoying rafting">
-                <h3>Fun for Everyone</h3>
-                <p>From families to adventure seekers, we offer experiences for all skill levels.</p>
-            </div>
-        </section>
-
-        <section class="company-purpose">
-            <img src="rafting003.jfif" alt="Water adventure">
-            <div>
-                <h3>Our Purpose</h3>
-                <p>At Nigeria Whitewater Rafting, our mission is to provide thrilling and unforgettable rafting adventures while prioritizing the highest standards of safety. 
-                We are dedicated to delivering exceptional experiences that combine adventure, teamwork, and a deep appreciation for nature, 
-                ensuring every journey down the river is both exhilarating and secure.</p>
+        <!-- 3 Images Inside a Single Text Box -->
+        <section class="image-text-container">
+            <div class="image-text-box">
+                <div class="image-item">
+                    <img src="rafting001.jpg" alt="Rafting Adventure 1">
+                    <p>Experience the rush of white water rafting as you navigate through Nigeria’s thrilling rapids.</p>
+                </div>
+                
+                <div class="image-item">
+                    <img src="rafting002.jpg" alt="Rafting Adventure 2">
+                    <p>Enjoy breathtaking scenery and challenging waves that make every moment unforgettable.</p>
+                </div>
+                
+                <div class="image-item">
+                    <img src="rafting003.jpg" alt="Rafting Adventure 3">
+                    <p>Perfect for adventure lovers, our rafting experiences cater to both beginners and experts alike.</p>
+                </div>
             </div>
         </section>
 
-        <section class="offerings">
-            <img src="rafting004.jfif" alt="Group of rafters">
-            <div>
-                <h3>What We Offer</h3>
-                <p>We offer premium rafting equipment and personalized itineraries, ensuring a top-quality adventure tailored to your needs.</p>
-            </div>
+        <!-- Adventure Lovers Text Box Positioned Below -->
+        <section class="adventure-box">
+            <img src="rafting004.jpg" alt="Adventure Enthusiasts">
+            <p>Perfect for adventure lovers, our rafting experiences cater to both beginners and experts alike, offering thrilling rides through rushing rapids and breathtaking natural landscapes. Whether you're seeking a heart-pounding challenge or a scenic, 
+                leisurely float, our guided tours ensure safety and excitement at every turn. Equipped with top-notch gear and led by experienced professionals, you'll navigate pristine waters while creating unforgettable memories. 
+                Join us for an exhilarating journey and discover the ultimate rafting adventure!</p>
         </section>
     </main>
     
