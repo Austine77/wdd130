@@ -1,52 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rafting Trips - Explore our exciting rafting adventures.">
-    <title>Trips - Nigeria Trips Rafting Adventures</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Trips | Nigeria White Water Rafting Trips</title>
+    <meta name="description" content="Learn about Nigeria Whitewater Rafting Adventure, your go-to experts for thrilling whitewater rafting adventures.">
+    <meta name="author" content="Sunday Prince Augustine">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/rafting.css">
+
+    <style>
+        /* Styles to arrange images in a single row */
+        .trips {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: nowrap;
+        }
+
+        .trips article {
+            flex: 1;
+            text-align: center;
+            border: 2px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .trips img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .trip-table {
+            margin-top: 60px; /* Adds three spaces below the images */
+            text-align: center;
+        }
+
+        .trip-table table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .trip-table th, .trip-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <div class="logo">
-            <img src="logo1.png" alt="Site Logo1">
-        </div>
+        <img src="sitelogo.png" alt="Logo">
         <nav>
-            <ul>
-                <li><a href="https://austine77.github.io/wdd130/">Home</a></li>
-                <li><a href="http://austine77.github.io/wdd130/wwr/about.html">About Us</a></li>
-                <li><a href="http://austine77.github.io/wdd130/wwr/trips.html">Trips</a></li>
-                <li><a href="http://austine77.github.io/wdd130/wwr/contact.html">Contact Us</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-
+    
     <main>
-        <h1>Rafting Adventures</h1>
-        <p>Join us for the most thrilling rafting experiences. Choose from a variety of exciting trips that cater to different adventure levels!</p>
-
-        <section class="trip-list">
-            <article class="trip">
-                <h2>River Rapids Challenge</h2>
-                <p>Feel the rush of wild waters in this heart-pumping rafting experience.</p>
-                <a href="#">Learn More</a>
-            </article>
-            <article class="trip">
-                <h2>Mountain River Trek</h2>
-                <p>Embark on a scenic rafting adventure surrounded by stunning mountain views.</p>
-                <a href="#">Learn More</a>
-            </article>
-            <article class="trip">
+        <h1>Explore Our Trips</h1>
+        <section class="trips">
+            <article>
+                <img src="rafting0001.jfif" alt="Family Adventure">
                 <h2>Family Adventure</h2>
-                <p>A perfect trip for families with gentle rapids and beautiful nature.</p>
-                <a href="#">Learn More</a>
+                <p>Experience the thrill of whitewater rafting with our expert guides. A perfect trip for family fun!</p>
+            </article>
+            <article>
+                <img src="rafting0002.jfif" alt="Adventure with Friends">
+                <h2>Adventure with Friends</h2>
+                <p>Enjoy a peaceful paddle through stunning landscapes, ideal for explorers.</p>
+            </article>
+            <article>
+                <img src="rafting0003.jfif" alt="Exciting Cruise">
+                <h2>Exciting Cruise</h2>
+                <p>Unwind with a scenic sunset boat ride, perfect for relaxation seekers.</p>
             </article>
         </section>
-    </main>
 
+        <section class="trip-table">
+            <h2>Available Trips</h2>
+            <table>
+                <tr>
+                    <th>Trip Name</th>
+                    <th>Duration</th>
+                    <th>Difficulty</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Adventure on the Rapids</td>
+                    <td>3 Hours</td>
+                    <td>High</td>
+                    <td>₦50,000</td>
+                </tr>
+                <tr>
+                    <td>Serene Lake Tour</td>
+                    <td>2 Hours</td>
+                    <td>Low</td>
+                    <td>₦30,000</td>
+                </tr>
+                <tr>
+                    <td>Sunset Cruise</td>
+                    <td>2.5 Hours</td>
+                    <td>Medium</td>
+                    <td>₦40,000</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    
     <footer>
-        <p>&copy; 🌴 2024 🌴 Sunday Prince Augustine 🌴 Akwa Ibom State🌴 Nigeria 🌴@ SP Web & Software Solution 🌴.</p>
+        <p>&copy; 2025 Sunday Prince Augustine | Nigeria | All rights reserved.</p>
+        <div class="social">
+            <a href="#"><img src="facebook.jfif" alt="Facebook"></a>
+            <a href="#"><img src="twitter.jfif" alt="Twitter"></a>
+            <a href="#"><img src="instagram.jfif" alt="Instagram"></a>
+        </div>
     </footer>
 </body>
+
 </html>
