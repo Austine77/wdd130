@@ -186,3 +186,16 @@ footer a {
   text-decoration: none;
   color: #fff;
 }
+
+/* Main Section Styling */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+aside {
+  background-color: #e9f7fe;
+  padding: 20px;
+  margin-top: 20px;
+}
