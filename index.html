@@ -41,7 +41,6 @@
         </nav>
     </header>
 
-    <!-- Main content goes here -->
     <main>
         <section class="hero">
             <img src="backgroud.jpg" alt="Exciting White Water Rafting Adventure">
@@ -79,7 +78,7 @@
             </div>
         </section>
 
-        <!-- Aside content moved inside <main> -->
+        <!-- Moved <aside> inside <main> -->
         <aside>
             <h2>Rafting Tips</h2>
             <p>Here are some expert tips to make your rafting adventure even more thrilling and safe.</p>
@@ -94,9 +93,12 @@
 
         <section class="newsletter">
             <h2>Sign Up for Our Newsletter</h2>
+            <!-- Added state/country name field -->
             <form>
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
+                <!-- Added State/Country field as required -->
+                <input type="text" name="state" placeholder="Your State or Country" required>
                 <button type="submit">Subscribe</button>
             </form>
         </section>
