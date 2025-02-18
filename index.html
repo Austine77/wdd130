@@ -1,154 +1,76 @@
 <!DOCTYPE html>
-<html lang="en"> 
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunday Prince Augustine | WDD 130</title>
     <meta name="description" content="Learn about Nigeria Whitewater Rafting Adventure, your go-to experts for thrilling whitewater rafting adventures.">
-    <meta name="author" content="Sunday Prince Augustine">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    
+    <meta name="author" content="Deka-Ops">
+    <title>Sunday Prince Augustine | WDD 130</title>
     <link rel="stylesheet" href="styles/rafting.css">
-
-    <style>
-        /* Updated CSS for Image and Text Box */
-        .image-text-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .image-text-box {
-            display: flex;
-            background: #f4f4f4;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 900px;
-            flex-wrap: wrap;
-        }
-
-        .image-item {
-            flex: 1;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .image-item img {
-            width: 100%;
-            max-width: 250px;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .image-item p {
-            margin-top: 10px;
-            font-size: 16px;
-            font-weight: 500;
-            color: #333;
-        }
-
-        /* New Style for Adventure Box */
-        .adventure-box {
-            background: #f9f9f9;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 900px;
-            margin: 60px auto 0; /* Space below the three images */
-        }
-
-        .adventure-box img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .adventure-box p {
-            margin-top: 10px;
-            font-size: 16px;
-            font-weight: 500;
-            color: #333;
-        }
-
-        @media (max-width: 768px) {
-            .image-text-box {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .adventure-box {
-                margin-top: 40px;
-            }
-        }
-    </style>
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+     
 </head>
 <body>
     <header>
-        <img src="Logo.png" alt="Website Logo">
+        <img src="Logo11.png" alt="web logo">
         <nav>
-            <a href="https://austine77.github.io/wdd130/wwr/index.html">Home</a>
-            <a href="https://austine77.github.io/wdd130/wwr/about.html">About Us</a>
-            <a href="https://austine77.github.io/wdd130/wwr/trips.html">Trips</a>
-            <a href="https://austine77.github.io/wdd130/wwr/contact.html">Contact Us</a>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
     
     <section class="hero">
         <img src="backgroud.jpg" alt="Exciting White Water Rafting Adventure">
-        <h1>Experience the Thrill of Nigeria White Water Rafting</h1>
+        <h1>Experience the Thrill of White Water Rafting</h1>
     </section>
     
-    <main>
+    <main class="grid-layout">
         <section class="intro">
-            <h2>Welcome to Sunday Prince Tour</h2>
-            <p>We craft unforgettable whitewater rafting adventures filled with excitement, 
-               thrill, and memories that will last a lifetime. 
-               Join us and embark on the journey of a lifetime.</p>
+            <h2>Welcome to Nigeria Whitewater Rafting</h2>
+            <p>Experience the Thrill of Nigeria White Water Rafting.</p>
         </section>
 
-        <!-- 3 Images Inside a Single Text Box -->
-        <section class="image-text-container">
-            <div class="image-text-box">
-                <div class="image-item">
-                    <img src="rafting001.jpg" alt="Rafting Adventure 1">
-                    <p>Experience the rush of white water rafting as you navigate through Nigeria’s thrilling rapids.</p>
-                </div>
-                
-                <div class="image-item">
-                    <img src="rafting002.jpg" alt="Rafting Adventure 2">
-                    <p>Enjoy breathtaking scenery and challenging waves that make every moment unforgettable.</p>
-                </div>
-                
-                <div class="image-item">
-                    <img src="rafting003.jpg" alt="Rafting Adventure 3">
-                    <p>Perfect for adventure lovers, our rafting experiences cater to both beginners and experts alike.</p>
-                </div>
+        <section class="features">
+            <div class="feature">
+                <img src="rafting1.jpg" alt="Rafting in action">
+                <h3>Exciting Rapids</h3>
+                <p>Challenge yourself with thrilling rapids guided by our expert team.</p>
+            </div>
+            <div class="feature">
+                <img src="rafting2.jpg" alt="Team enjoying rafting">
+                <h3>Fun for Everyone</h3>
+                <p>From families to adventure seekers, we offer experiences for all skill levels.</p>
             </div>
         </section>
 
-        <!-- Adventure Lovers Text Box Positioned Below -->
-        <section class="adventure-box">
-            <img src="rafting004.jpg" alt="Adventure Enthusiasts">
-            <p>Perfect for adventure lovers, our rafting experiences cater to both beginners and experts alike, offering thrilling rides through rushing rapids and breathtaking natural landscapes. Whether you're seeking a heart-pounding challenge or a scenic, 
-                leisurely float, our guided tours ensure safety and excitement at every turn. Equipped with top-notch gear and led by experienced professionals, you'll navigate pristine waters while creating unforgettable memories. 
-                Join us for an exhilarating journey and discover the ultimate rafting adventure!</p>
+        <section class="company-purpose">
+            <img src="rafting3.jpg" alt="water">
+            <div>
+            <h3>Our Purpose</h3>
+            <p>At Deka-Ops, our mission is to deliver safe and exciting rafting adventures</p>
+            </div>
+        </section>
+
+        <section class="offerings">
+            <img src="rafting4.jpg" alt="rafters">
+            <div>
+                <h3>What We Offer</h3>
+                <p>We provide top-tier rafting gear with customizable itineraries</p>
+            </div>
         </section>
     </main>
     
     <section class="cta">
         <div class="explore">
-            <h2>Ready for an Unforgettable Adventure?</h2>
-            <a href="trips.html" class="cta-button">Explore Our Trips</a>
+        <h2>Ready for an Unforgettable Adventure?</h2>
+        <a href="trips.html" class="cta-button">Explore Our Trips</a>
         </div>
     </section>
 
