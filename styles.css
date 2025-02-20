@@ -7,31 +7,33 @@ body {
   color: #333;
 }
 
-/* Header Styles */
-header {
+/* Navigation */
+nav {
   background-color: #0056b3;
-  color: white;
-  padding: 15px;
-  text-align: center;
+  padding: 10px;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav ul li a {
+nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  margin: 0 15px;
 }
 
-/* Main Content Styles */
+/* Heading */
+h1 {
+  font-size: 24px;
+  color: #0056b3;
+  text-align: center;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main Section */
 main {
   max-width: 800px;
   margin: 20px auto;
@@ -40,20 +42,13 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-main img {
-  width: 150px;
-  height: auto;
-  border-radius: 50%;
-}
-
-/* Aside Section */
+/* Aside */
 aside {
   width: 300px;
   margin: 20px auto;
   border: 2px solid #0056b3;
   padding: 15px;
   background-color: #e0f7fa;
-  color: #000;
   text-align: center;
 }
 
@@ -62,12 +57,12 @@ aside img {
   height: auto;
 }
 
-/* Paragraph Styling */
+/* Paragraph */
 p {
   padding: 0;
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
   margin-top: 20px;
   border-top: 2px solid #0056b3;
