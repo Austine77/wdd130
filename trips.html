@@ -80,10 +80,10 @@
         }
 
         .trip-table {
-            background: url('background.jpg') no-repeat center center/cover; /* Replace with your actual background image */
-            background-color: rgba(30, 58, 138, 0.8); /* Fallback color with transparency */
+            background: url('background.jpg') no-repeat center center/cover; /* Replace with actual background */
+            background-color: rgba(30, 58, 138, 0.8); /* Fallback color */
             padding: 30px;
-            border-radius: 10px;
+            border-radius: 10px; /* Corrected border-radius */
             color: white;
             text-align: center;
             margin-top: 20px;
@@ -98,6 +98,8 @@
             width: 100%;
             border-collapse: collapse;
             background: rgba(255, 255, 255, 0.1); /* Light transparency for better visibility */
+            border-radius: 5px; /* Fixed syntax */
+            overflow: hidden; /* Ensures border-radius is applied */
         }
 
         .trip-table th, .trip-table td {
