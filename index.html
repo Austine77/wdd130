@@ -1,302 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Experience thrilling white water rafting adventures with Sunday Prince Tour.">
-    <meta name="author" content="Sunday Prince Augustine">
-    <title>Sunday Prince Augustine | WDD 130</title>
-
-    <!-- Updated Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/rafting.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Nigeria Whitewater Rafting - An exciting adventure showcasing the beauty of Nigeria's rivers">
+        <meta name="author" content="Sunday Prince Augustine">
+        <title>Sunday Prince Augustine | WDD 130</title>
+        
+        <!-- Correct Link to CSS File -->
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
     
-    <style>
-        /* General Page Styling */
-        .bangers-regular {
-  font-family: "Bangers", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
-        header {
-            background: #1e3a8a;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header img {
-            width: 100px;
-        }
-
-        nav {
-            margin-top: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        main {
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Hero Section */
-        .hero {
-            position: relative;
-            text-align: center;
-            overflow: hidden;
-            width: 100%;
-            max-height: 500px;
-        }
-
-        .hero img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            filter: contrast(110%) brightness(105%);
-        }
-
-        .hero h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(30, 58, 138, 0.8);
-            padding: 15px 30px;
-            border-radius: 5px;
-            font-size: 2.5em;
-            color: white;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
-
-        /* Features Section */
-        .features {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .features .feature {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .features .feature img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-
-        /* CTA Section */
-        .cta {
-            text-align: center;
-            padding: 40px;
-            background-color: #1e3a8a;
-            color: white;
-        }
-
-        .cta a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #f59e0b;
-            color: black;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1e3a8a;
-            color: white;
-        }
-
-        .social a img {
-            width: 30px;
-            margin: 0 5px;
-        }
-    </style>
-</head>
-
 <body>
     <header>
-        <img src="Logo-00.jpg" alt="site logo">
+        <img src="Logo-00.jpg" alt="web-logo">
         <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Trips</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
-
+    
     <main>
-        <section class="hero">
-            <img src="rafting.jpg" alt="Exciting White Water Rafting Adventure">
-            <h1>Experience the Thrill of White Water Rafting</h1>
-        </section>
-
-        <section class="features">
-            <div class="feature">
-                <img src="rafting1.jpg" alt="Rafting in action">
-                <h3>Exciting Rapids</h3>
-                <p>Challenge yourself with thrilling rapids guided by our expert team.</p>
-            </div>
-            <div class="feature">
-                <img src="rafting2.jpg" alt="Team enjoying rafting">
-                <h3>Fun for Everyone</h3>
-                <p>From families to adventure seekers, we offer experiences for all skill levels.</p>
-            </div>
-            <div class="feature">
-                <img src="rafting3.jpg" alt="Scenic Water Adventure">
-                <h3>Scenic Views</h3>
-                <p>Enjoy breathtaking landscapes while navigating the waters.</p>
-            </div>
-        </section>
-
-        <section class="cta">
-            <h2>Ready for an Unforgettable Adventure?</h2>
-            <a href="trips.html" class="cta-button">Explore Our Trips</a>
-        </section>
+        <h1>Sunday Prince Augustine: WDD 130</h1>
+        <img src="profile.jpg" alt="Sunday Prince Augustine">
+        <p>Hello, my name is Sunday Prince Augustine. I am from Akwa Ibom State, located in the South-South region of the Niger Delta, Nigeria. 
+        I am a dedicated Software Development student at Brigham Young University-Idaho, specializing in writing scripts for web and application development. 
+        My focus is on solving complex problems, optimizing project efficiency, and enhancing user experience through well-structured and innovative code. 
+        With expertise in multiple programming languages and frameworks, I am passionate about developing scalable solutions that drive technological advancement.</p>
     </main>
-
+    
+    <aside>
+        <h2>Akwa Ibom State</h2>
+        <img src="akwa-ibom.jpg" alt="Akwa Ibom State, Nigeria">
+        <p>"Akwa Ibom State is a coastal state in southern Nigeria, located in the Niger Delta region. 
+        It was created in 1987 from the former Cross River State. 
+        The state is known for its rich cultural heritage, natural resources, tourism, and economic potential." - wiki</p>
+    </aside>
+    
     <footer>
-        <p>&copy; 2025 - SP Web & Software Solution - Nigeria | Sunday Prince Augustine @ Brigham Young University-Idaho.</p>
-        <a href="wireframe.png">Wireframe</a>
-        <div class="social">
-            <a href="https://facebook.com">
-                <img src="facebook.jfif" alt="Facebook">
-            </a>
-            <a href="https://twitter.com">
-                <img src="twitter.jfif" alt="Twitter">
-            </a>
-            <a href="https://instagram.com">
-                <img src="instagram.jfif" alt="Instagram">
-            </a>
-        </div>
+        <p>&copy; 2025 Sunday Prince Augustine | All rights reserved</p>
     </footer>
 </body>
-
 </html>
