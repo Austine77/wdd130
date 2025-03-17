@@ -1,48 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Nigeria Whitewater Rafting - An exciting adventure showcasing the beauty of Nigeria's rivers">
-        <meta name="author" content="Sunday Prince Augustine">
-        <title>Sunday Prince Augustine | WDD 130</title>
-        
-        <!-- Correct Link to CSS File -->
-        <link rel="stylesheet" href="styles/styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nigeria Whitewater Rafting - An exciting adventure showcasing the beauty of Nigeria's rivers">
+    <meta name="author" content="Sunday Prince Augustine">
+    <title>Nigeria Whitewater Rafting | Home</title>
     
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Link to CSS File -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
 <body>
     <header>
-        <img src="Logo-00.jpg" alt="web-logo">
+        <div class="logo">
+            <img src="Logo-00.jpg" alt="Nigeria Whitewater Rafting Logo">
+        </div>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Trips</a></li>
-                <li><a href="#">Contact Us</a></li>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <h1>Sunday Prince Augustine: WDD 130</h1>
-        <img src="profile.jpg" alt="Sunday Prince Augustine">
-        <p>Hello, my name is Sunday Prince Augustine. I am from Akwa Ibom State, located in the South-South region of the Niger Delta, Nigeria. 
-        I am a dedicated Software Development student at Brigham Young University-Idaho, specializing in writing scripts for web and application development. 
-        My focus is on solving complex problems, optimizing project efficiency, and enhancing user experience through well-structured and innovative code. 
-        With expertise in multiple programming languages and frameworks, I am passionate about developing scalable solutions that drive technological advancement.</p>
+        <!-- Hero Section with Overlay Text -->
+        <div class="hero">
+            <img src="Logo-00100.jpg" alt="Whitewater rafting adventure">
+            <div class="hero-text">
+                <h1 class="bangers-regular">Welcome to Nigeria Whitewater Rafting</h1>
+                <p class="poppins-regular">Experience the thrill of whitewater rafting in Nigeria's most beautiful rivers! Join us for an adventure of a lifetime.</p>
+                <a href="trips.html" class="cta-button poppins-medium">Explore Trips</a>
+            </div>
+        </div>
+
+        <section>
+            <h2 class="poppins-bold">Our Popular Trips</h2>
+
+            <!-- Text descriptions with different background -->
+            <div class="trip-text">
+                <p class="poppins-regular"><strong>Niger Delta Rapids:</strong> A thrilling ride through the heart of the delta.</p>
+                <p class="poppins-regular"><strong>Kainji River Challenge:</strong> A challenging yet rewarding adventure.</p>
+                <p class="poppins-regular"><strong>Calabar Stream Expedition:</strong> Perfect for beginners and families.</p>
+            </div>
+
+            <!-- Images with different background -->
+            <div class="trip-images">
+                <img src="rafting1.jpg" alt="Niger Delta Rapids">
+                <img src="rafting2.jpg" alt="Kainji River Challenge">
+                <img src="rafting3.jpg" alt="Calabar Stream Expedition">
+            </div>
+        </section>
     </main>
     
     <aside>
-        <h2>Akwa Ibom State</h2>
-        <img src="akwa-ibom.jpg" alt="Akwa Ibom State, Nigeria">
-        <p>"Akwa Ibom State is a coastal state in southern Nigeria, located in the Niger Delta region. 
-        It was created in 1987 from the former Cross River State. 
-        The state is known for its rich cultural heritage, natural resources, tourism, and economic potential." - wiki</p>
+        <h2 class="poppins-semibold">Why Choose Us?</h2>
+        <p class="poppins-light">We offer expert-guided tours, top-notch safety equipment, and an unforgettable adventure for all skill levels.</p>
     </aside>
     
     <footer>
-        <p>&copy; 2025 Sunday Prince Augustine | All rights reserved</p>
+        <p class="poppins-medium">&copy; 2025 Nigeria Whitewater Rafting | Designed by Sunday Prince Augustine | WDD 130</p>
     </footer>
 </body>
 </html>

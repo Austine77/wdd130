@@ -1,73 +1,165 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
+/* Reset styles */
+body, h1, h2, p, ul {
   margin: 0;
   padding: 0;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/* General Styles */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   background-color: #f4f4f4;
-  color: #333;
+}
+
+/* Header */
+header {
+  width: 100%;
+  background: #005f73;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 100px;
 }
 
 /* Navigation */
-nav {
-  background-color: #0056b3;
-  padding: 10px;
+nav .nav-links {
+  display: flex;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+nav ul li {
   margin: 0 15px;
 }
 
-/* Heading */
-h1 {
-  font-size: 24px;
-  color: #0056b3;
-  text-align: center;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-/* Images */
-img {
-  max-width: 100%;
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  nav .nav-links {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  nav ul li {
+      margin: 5px 0;
+  }
+}
+
+/* Hero Section with text overlay */
+.hero {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 20px;
+}
+
+.hero img {
+  width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
-/* Main Section */
-main {
-  max-width: 800px;
-  margin: 20px auto;
+/* Hero Text Overlay */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
   padding: 20px;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Aside */
-aside {
-  width: 300px;
-  margin: 20px auto;
-  border: 2px solid #0056b3;
-  padding: 15px;
-  background-color: #e0f7fa;
+  border-radius: 10px;
   text-align: center;
+  width: 80%;
+  font-family: "Bangers", system-ui;
 }
 
-aside img {
-  width: 200px;
-  height: auto;
+/* Call-to-Action Button */
+.cta-button {
+  display: inline-block;
+  background: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: 600;
 }
 
-/* Paragraph */
-p {
-  padding: 0;
+/* Our Popular Trips Section */
+section {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+/* Text Section - Stacks text in a row with a background */
+.trip-text {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+  background: #e0f7fa;  /* Light blue background */
+  border-radius: 10px;
+}
+
+.trip-text p {
+  width: 30%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Images Section - Separate background */
+.trip-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  background: #ffcc80; /* Light orange background */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.trip-images img {
+  width: 30%;
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+/* Sidebar */
+aside {
+  background: #94d2bd;
+  padding: 20px;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  margin: 20px 0;
+  border-radius: 10px;
+  font-weight: 500;
 }
 
 /* Footer */
 footer {
-  margin-top: 20px;
-  border-top: 2px solid #0056b3;
-  text-align: center;
-  padding: 10px;
-  background-color: #0056b3;
+  width: 100%;
+  background: #005f73;
   color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  font-weight: 500;
 }
