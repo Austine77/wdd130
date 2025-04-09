@@ -224,17 +224,32 @@ footer {
 .contact-fields select:focus-visible { 
     border: #00ff00 solid 2px;
     font-size: 20px;
-
-}
-
-.signup input {
-    width: 2cm;
 }
 
 .submit {
     padding: 1em 3em;
     background-color: #150103;
-}
+    margin: 2rem 0;
+  }
+  
+  /* New Rules */
+  * {
+    box-sizing: border-box;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .radio-inputs {
+    display: grid;
+    grid-template-columns: 2rem auto;
+  }
+  
+  .signup {
+    display: grid;
+    grid-template-columns: 2rem auto;
+  }
 
 .employees {
     grid-column: 2/12;
