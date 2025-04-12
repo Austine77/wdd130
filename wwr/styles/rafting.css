@@ -233,6 +233,11 @@ footer {
   }
   
   /* New Rules */
+  intro {
+    margin-top: 3rem;
+    grid-column: 1/-1;
+    padding: 0 1em;
+  }
   * {
     box-sizing: border-box;
   }
@@ -336,7 +341,6 @@ footer a {
     display: grid;
     margin: 1rem auto;
     grid-template-columns: 120px 1fr 1fr;
-    max-width: 1500px;
     align-items: center;
     justify-content: space-between;
     background-color: #3e3e3e;
@@ -354,8 +358,6 @@ footer a {
   
   .hero{
     position: relative;
-    text-align: center;
-    color: var(--accent2-color--);
   }
   
   .hero-img{
@@ -367,15 +369,15 @@ footer a {
   
   .hero h1{
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(30, 77, 95, 0.7);
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 3em;
-    color: var(--secondary-color);
-  }
+    color: #f3e6e6;
+  }  
   
   .hero article{
     position: absolute;
@@ -420,12 +422,13 @@ footer a {
     margin: 0 auto;
   }
   
-  section h2{
+  intro h2 {
     color: #05544f;
     font-size: 2em;
-    border-bottom: 3px solid var(--secondary-color);
-    display: inline-block;
+    border-bottom: 3px solid;
+    display: block;
     margin-bottom: 20px;
+    text-align: center; 
   }
   
   section img{
@@ -678,8 +681,5 @@ footer a {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;          
       align-items: start; 
-      margin: 0 auto;
-      max-width: 1200px;
-      padding: 20px;
       background-color: #FFFFFF;
     }
